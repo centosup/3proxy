@@ -1,5 +1,5 @@
 Name:		3proxy
-Version:		0.8.7
+Version:		0.8.12
 Release:		1%{?dist}
 
 Summary:		Tiny but very powerful proxy
@@ -36,7 +36,7 @@ SOCKS v5, FTP, POP3, UDP и TCP проброс портов (portmapping), сп�
 и т.д.
 
 %prep
-%setup -q -n %{name}-%{name}-%{version}
+%setup -q -n %{name}-%{version}
 
 %patch0 -p0 -b .man-cfg
 
@@ -104,6 +104,9 @@ fi
 %{_mandir}/man3/*.3.gz
 
 %changelog
+* Fri Nov 08 2018 CentOSUp.ispsystem.info <centosup@centosup.ispsystem.info> - 0.8.12-1
+- New upstream release 0.8.12
+
 * Fri Oct 03 2016 CentOSUp.ispsystem.info <centosup@centosup.ispsystem.info> - 0.8.7-1
 - New upstream release 0.8.7
 

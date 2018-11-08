@@ -4,7 +4,7 @@
 %global _hardened_build 1
 
 Name:		3proxy
-Version:		0.8.7
+Version:		0.8.12
 Release:		1%{?dist}
 
 Summary:		Tiny but very powerful proxy
@@ -63,7 +63,7 @@ Legacy SysV initscripts for init mechanisms such as upstart
 which do not support the systemd unit file format.
 
 %prep
-%setup -q -n %{name}-%{name}-%{version}
+%setup -q -n %{name}-%{version}
 
 %patch0 -p0 -b .man-cfg
 
@@ -144,6 +144,9 @@ rm -rf %{buildroot}
 %{_initrddir}/%{name}
 
 %changelog
+* Thu Nov 08 2018 CentOSUp.ispsystem.info <centosup@centosup.ispsystem.info> - 0.8.12-1
+- New upstream release 0.8.12
+
 * Fri Oct 03 2016 CentOSUp.ispsystem.info <centosup@centosup.ispsystem.info> - 0.8.7-1
 - New upstream release 0.8.7
 
